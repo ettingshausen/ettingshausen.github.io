@@ -24,6 +24,10 @@ github_username:  ettingshausen
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
 theme: minima
 gems:
   - jekyll-feed
