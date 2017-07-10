@@ -1,5 +1,6 @@
 {
     "name": "Nipkow",
+    "short_name": "Nipkow",
     "description": "About a software engineer .",
     "theme_color": "#f7f7f7",
     "display": "standalone",
