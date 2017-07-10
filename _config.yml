@@ -22,6 +22,7 @@ url: "http://nipkow.lofter.com" # the base hostname & protocol for your site, e.
 twitter_username: 
 github_username:  ettingshausen
 instagram_username:  ettingshausen
+google_analytics: UA-102246716-1
 
 # Build settings
 # markdown: kramdown
