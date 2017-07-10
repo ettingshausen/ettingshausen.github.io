@@ -2,6 +2,7 @@
     "name": "Nipkow",
     "short_name": "Nipkow",
     "description": "About a software engineer .",
+    "start_url": "/",
     "theme_color": "#f7f7f7",
     "display": "standalone",
     "orientation": "portrait",
