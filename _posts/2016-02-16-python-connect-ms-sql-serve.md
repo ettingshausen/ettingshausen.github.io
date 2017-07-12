@@ -2,7 +2,7 @@
 layout: post
 title:  "Python连接MS SQL Server"
 date:   2016-02-16 16:05:06 +0800
-categories: SQL Serve
+categories: Python
 ---
 
 Python访问各个数据库需要需要借助对应的modules，比如MySQL需要[MySQLdb](https://dev.mysql.com/downloads/connector/python/)，SQL Server需要[pymssql](http://www.pymssql.org/en/latest/index.html)。
