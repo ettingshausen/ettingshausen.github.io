@@ -62,6 +62,7 @@
                 map.panTo(r.point);
                 map.setCurrentCity(r.address.city);
                 alert('您的位置：' + r.address.city + r.point.lng + ',' + r.point.lat);
+                doTask();
             }
             else {
                 alert('failed' + this.getStatus());
@@ -131,7 +132,7 @@
 
         }
 
-        doTask();
+        
 
         setInterval(function () {
             doTask()
