@@ -5,7 +5,10 @@ date:   2017-07-24 01:18:48 +0800
 categories: Powershell
 ---
 
-下载了写教学视频，再IIS上发布，这样就可以再手机上看了。但是，这些视频的文件名中包含`+`这个字符，URL中应该是个需要转义的字符，所以在浏览器中根本没法播放。
+![2017年7月 拍摄于南窑头](http://upload-images.jianshu.io/upload_images/1335634-bbfd7fb0d1f3bd2d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
+
+下载了些教学视频，再IIS上发布，这样就可以再手机上看了。但是，这些视频的文件名中包含`+`这个字符，URL中应该是个需要转义的字符，所以在浏览器中根本没法播放。
 
 于是就想到了用Power shell把这些`+`一次性换成`-`。问题应该就解决了。
 
