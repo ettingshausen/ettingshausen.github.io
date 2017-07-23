@@ -23,3 +23,12 @@ Get-ChildItem *.mp4 | Rename-Item -NewName { $_.name -Replace '\+','-' }
 看起来非常简单，只需要一行  : )
 
 详细参考微软官方文档[Rename-Item](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.management/rename-item)
+
+PS 每次更新博客都要手写date，怎么通过PowerShell获取时间并且转换想要的格式呢？
+
+```powershell
+(Get-Date).ToString("yyyy-MM-dd hh:mm:ss +0800")
+```
+
+输出：
+>2017-07-24 01:23:10 +0800
