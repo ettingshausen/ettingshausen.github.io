@@ -13,7 +13,7 @@ categories: Powershell
 
 
 
-下载了些教学视频，再IIS上发布，这样就可以再手机上看了。但是，这些视频的文件名中包含`+`这个字符，URL中应该是个需要转义的字符，所以在浏览器中根本没法播放。
+下载了些教学视频，在IIS上发布，这样就可以再手机上看了。但是，这些视频的文件名中包含`+`这个字符，URL中应该是个需要转义的字符，所以在浏览器中根本没法播放。
 
 于是就想到了用Power shell把这些`+`一次性换成`-`。问题应该就解决了。
 
@@ -32,7 +32,7 @@ Get-ChildItem *.mp4 | Rename-Item -NewName { $_.name -Replace '\+','-' }
 
 详细参考微软官方文档[Rename-Item](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.management/rename-item)
 
-PS 每次更新博客都要手写date，怎么通过PowerShell获取时间并且转换想要的格式呢？
+P.S 每次更新博客都要手写date，怎么通过PowerShell获取时间并且转换想要的格式呢？
 
 ```powershell
 (Get-Date).ToString("yyyy-MM-dd hh:mm:ss +0800")
