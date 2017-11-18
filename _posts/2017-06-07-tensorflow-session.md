@@ -12,7 +12,7 @@ categories: Tensorflow
 * Session允许执行Graph或Graph的一部分。 它分配资源（在一台或多台机器上），并保存中间结果和变量的实际值。
 我们来看一个例子。
 
-#定义Graph
+# 定义Graph
 
 我们定义一个带有变量和三个操作的图：变量总是返回我们变量的当前值。 initialize将初始值42赋给该变量。 assign将新值为13赋给该变量。
 ```python
@@ -25,7 +25,7 @@ with graph.as_default():
 注：Tensorflow会被帮我们创建一个默认的Graph，前两行的代码可以省略。
 
 
-#在Session中运行计算
+# 在Session中运行计算
 
 要运行刚才定义的三个操作中的任何一个，我们需要为Graph创建一个Session。 Session还将分配内存来存储变量的当前值。
 
