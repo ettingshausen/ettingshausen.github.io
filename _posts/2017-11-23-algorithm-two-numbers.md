@@ -3,7 +3,12 @@ layout: post
 title:  "两数求和相等的所有可能"
 date:   2017-11-23 12:03:07 +0800
 categories: algorithm
----
+---  
+![IMG_20171121_093946_949.jpg](http://upload-images.jianshu.io/upload_images/1335634-c85b2f678a9f4ffe.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+*2015年5月 海南大学*  
+{:.image-caption}  
+
 偶然发现一个算法题，不复杂，挺有意思的。
 
 >问题：给一个数组，里面的数字不重复，求任意两数相加的和为一个固定值的所有可能的下标组合。  
@@ -94,7 +99,8 @@ List<Integer[]> getSum(int[] a, int target) {
 ```java
 List<Integer[]> twoSum(int[] a, int target) {
     long begin = System.currentTimeMillis();
-    Map<Integer, Integer> map = new HashMap<>();    // key为当前下标对应的值和target的差值 value为当前下标
+    // key为当前下标对应的值和target的差值 value为当前下标
+    Map<Integer, Integer> map = new HashMap<>();    
     List<Integer[]> result = new ArrayList<>(a.length);
     for (int i = 0; i < a.length; ++i) {
         int current = a[i]; // 当前下标对应的值
@@ -121,3 +127,9 @@ List<Integer[]> twoSum(int[] a, int target) {
 # 总结
 
 减少时间复杂度，通常的做法就是通过牺牲点空间复杂度来换取。这算是个典型的例子，通过充分利用哈希表良好的时间复杂度，提升程序的性能。
+
+
+# 参考文献  
+
+[1] [算法练习02-两数求和相等的所有可能](http://benjaminwhx.com/2016/09/04/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A002-%E4%B8%A4%E6%95%B0%E6%B1%82%E5%92%8C%E7%9B%B8%E7%AD%89%E7%9A%84%E6%89%80%E6%9C%89%E5%8F%AF%E8%83%BD/)  
+[2] [浅谈时间复杂度- 算法衡量标准Big O](http://www.cnblogs.com/chuanheliu/p/6389037.html)

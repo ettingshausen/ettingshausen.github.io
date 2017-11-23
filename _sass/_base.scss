@@ -233,3 +233,11 @@ pre {
         padding-bottom: 8px;
     }
 }
+
+table {
+    border-collapse: collapse;
+    th, td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+}
