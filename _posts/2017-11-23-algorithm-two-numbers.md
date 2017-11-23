@@ -30,11 +30,11 @@ for (int i = 0; i < a.length; ++i) {
     int res = target - a[i];
     for (int j = i + 1; j < a.length; ++j) {
         if (a[j] == res) {
-            Integer[] integers = new Integer[2];
-            integers[0] = i;
-            integers[1] = j;
+            Integer[] pair = new Integer[2];
+            pair[0] = i;
+            pair[1] = j;
             tails.add(a[j]);
-            result.add(integers);
+            result.add(pair);
             break;
         }
     }
@@ -49,7 +49,9 @@ for (int i = 0; i < size; i++) {
     Random random = new Random();
     source.add(random.nextInt(size) + 1);
 }
-int[] array = source.stream().mapToInt(i -> i).toArray();
+int[] array = source.stream()
+                    .mapToInt(i -> i)
+                    .toArray();
 ```
 
 通过 `System.currentTimeMillis()` 查看耗时，消耗了885毫秒，使用答案的方法耗时33毫秒。差异巨大！
@@ -60,17 +62,17 @@ int[] array = source.stream().mapToInt(i -> i).toArray();
 根据刚才答案的提示，用一次循环搞定。
 ```java
 
-private static List<Integer[]> getSum(int[] a, int target) {
+List<Integer[]> getSum(int[] a, int target) {
 
     long begin = System.currentTimeMillis();
     List<Integer[]> result = new ArrayList<>();
     Map<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < a.length; i++) {
         if (map.get(a[i]) != null) {
-            Integer[] integers = new Integer[2];
-            integers[0] = map.get(a[i]);
-            integers[1] = i;
-            result.add(integers);
+            Integer[] pair = new Integer[2];
+            pair[0] = map.get(a[i]);
+            pair[1] = i;
+            result.add(pair);
             continue;
         }
         int sub = target - a[i];
@@ -90,7 +92,7 @@ private static List<Integer[]> getSum(int[] a, int target) {
 参考答案的代码如下：  
 
 ```java
-private static List<Integer[]> twoSum(int[] a, int target) {
+List<Integer[]> twoSum(int[] a, int target) {
     long begin = System.currentTimeMillis();
     Map<Integer, Integer> map = new HashMap<>();    // key为当前下标对应的值和target的差值 value为当前下标
     List<Integer[]> result = new ArrayList<>(a.length);
