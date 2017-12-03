@@ -6,7 +6,7 @@ categories: Powershell
 comments: true
 ---
 
-![2017年7月 拍摄于南窑头](http://upload-images.jianshu.io/upload_images/1335634-bbfd7fb0d1f3bd2d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![2017年7月 拍摄于南窑头](//upload-images.jianshu.io/upload_images/1335634-bbfd7fb0d1f3bd2d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
 
 
 *2017年7月 拍摄于南窑头*  
