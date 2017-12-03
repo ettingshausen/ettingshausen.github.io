@@ -35,7 +35,7 @@ Get-ChildItem *.mp4 | Rename-Item -NewName { $_.name -Replace '\+','-' }
 P.S 每次更新博客都要手写date，怎么通过PowerShell获取时间并且转换想要的格式呢？
 
 ```powershell
-(Get-Date).ToString("yyyy-MM-dd hh:mm:ss +0800")
+(Get-Date).ToString("yyyy-MM-dd HH:mm:ss +0800")
 ```
 
 输出：
