@@ -3,6 +3,7 @@ layout: post
 title:  "Powershell批量重命名"
 date:   2017-07-24 01:18:48 +0800
 categories: Powershell
+comments: true
 ---
 
 ![2017年7月 拍摄于南窑头](http://upload-images.jianshu.io/upload_images/1335634-bbfd7fb0d1f3bd2d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
