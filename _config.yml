@@ -16,7 +16,7 @@
 title: Nipkow
 email: ettingshausen@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
-  There have been many changes since I lost the Xperia Z3.
+  Stay Hungry, Stay Foolish
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nipkow.lofter.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
