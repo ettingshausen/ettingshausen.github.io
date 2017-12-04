@@ -1,4 +1,6 @@
 # Blog 
+[![Build Status](https://travis-ci.org/ettingshausen/ettingshausen.github.io.svg?branch=master)](https://travis-ci.org/ettingshausen/ettingshausen.github.io)  
+
 A blog based on jekyll minima theme.
  
 
