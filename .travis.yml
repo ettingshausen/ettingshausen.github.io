@@ -6,6 +6,6 @@ install:
   # Install Jekyll and dependencies
   - bundle install
 
-script: bundle exec rake site:deploy --quiet #--trace
+script: bundle exec jekyll build
 
 sudo: false # route your build to the container-based infrastructure for a faster build
