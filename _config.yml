@@ -34,7 +34,7 @@ markdown: redcarpet
 redcarpet:
     extensions: ["tables"]
 theme: minima
-gems:
+plugins:
   - jekyll-feed
   - jemoji
   - jekyll-seo-tag
