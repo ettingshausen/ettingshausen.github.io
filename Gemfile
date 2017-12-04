@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+
+gem "minima", "~> 2.1.1"
 group :jekyll_plugins do
   gem 'github-pages'
   gem 'jekyll-pwa-plugin'
   gem 'jemoji'
   gem 'jekyll-seo-tag'
+  gem "jekyll-feed"
 end
