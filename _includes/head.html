@@ -8,9 +8,10 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml
     " | prepend: site.baseurl | prepend: site.url }}">
-  <script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-
-  </script>
+  {% if page.math %}
+  <script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  {% endif %}
+  
   <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">

@@ -4,7 +4,7 @@
 [![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](https://travis-ci.org/ettingshausen/ettingshausen.github.io)    
   
 
-A blog based on jekyll minima theme.
+A blog based on jekyll [minima](https://github.com/jekyll/minima) theme.
  
 
 
