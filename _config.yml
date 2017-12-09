@@ -39,7 +39,6 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-pwa-plugin
 
 
 
