@@ -242,3 +242,22 @@ table {
         border: 1px solid #ddd;
     }
 }
+
+.footnote {
+
+    &:before {
+        content: ' [ ';
+    }
+    &:after {
+        content: ' ]';
+    }
+}
+
+
+.footnotes {
+    color: gray;
+    a {
+        color: gray;
+    } 
+}
+
