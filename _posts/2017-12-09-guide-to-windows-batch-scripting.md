@@ -29,7 +29,7 @@ Windows 10 替换了默认的 `cmd` 为 `Powershell` ，显然 `Powershell` 更�
 ---
 
 + [Part 1 – 开始]({% post_url 2017-12-10-windows-batch-getting-started %})
-+ Part 2 – Variables
++ [Part 2 – 变量]({% post_url 2017-12-12-windows-batch-variables %})
 + Part 3 – Return Codes
 + Part 4 – stdin, stdout, stderr
 + Part 5 – If/Then Conditionals

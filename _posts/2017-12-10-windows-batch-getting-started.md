@@ -11,7 +11,7 @@ author: ettingshausen
 >
 + [Overview]({% post_url 2017-12-09-guide-to-windows-batch-scripting %})
 + Part 1 – 开始
-+ Part 2 – Variables
++ [Part 2 – 变量]({% post_url 2017-12-12-windows-batch-variables %})
 + Part 3 – Return Codes
 + Part 4 – stdin, stdout, stderr
 + Part 5 – If/Then Conditionals
