@@ -61,9 +61,9 @@ bar
 `SET` 命令不加参数，会输出所有的变量到控制台。这些变量大多数是环境变量，比如 `%PATH%` 或者 `%TEMP%`。  
 
 ![无参数的SET命令](http://upload-images.jianshu.io/upload_images/1335634-7c9b379f146d1def.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
-
 *无参数的SET命令*  
 {:.image-caption}   
+
 >**注意**：调用SET将列出当前会话的所有常规（静态）变量。不包括动态环境变量，如 `%DATE%`或 `%CD%`。在SET帮助文本的末尾列出这些动态变量，可以通过调用 `SET /?` 来查看。
 
 >`%CD%` - 扩展到当前目录字符串。  
@@ -77,3 +77,96 @@ bar
 
 # Variable Scope (Global vs Local)
 ---
+默认情况下，变量对整个命令提示符会话是全局的。调用`SETLOCAL`命令，将变量变为局部变量。任何局部变量赋值在调用`ENDLOCAL`，`EXIT`，或者当执行到达脚本中的文件结尾（EOF）时都会恢复。 
+
+本示例演示如何在名为`HelloWorld.cmd`的脚本中更改名为`foo`的现有变量。 当脚本退出时，`%foo%`会恢复的原始值。
+>`HelloWrold.cmd`
+```bash
+SETLOCAL
+SET v=Local Value
+ECHO %v%
+```   
+
+![变量恢复](http://upload-images.jianshu.io/upload_images/1335634-51ada57b0ee67159.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+*变量恢复*  
+{:.image-caption}  
+
+一个真实的例子应该是修改系统的`%PATH%`环境变量。
+> **PATH**: 存储了执行命令时搜索的目录列表。  
+
+![修改系统Path环境变量](http://upload-images.jianshu.io/upload_images/1335634-aefd4cfb99e859e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+*修改系统Path环境变量*  
+{:.image-caption}   
+
+
+# Special Variables 
+---
+
+有些特殊情况，变量的使用有些小差异。在命令行中给脚本传递的参数也是变量，但是不要使用`%var%`语法。 而是用`%`跟一个0-9的数字读取每个参数，数字代表参数的位置。 在稍后的创建函数的例子中，将会看到同样的风格。  
+
+还有一个使用`!`的变量语法，就像`!var!` 这是一种称为延迟扩展的特殊情况。 当我们讨论条件（if / then）和循环时，将会讲解更多关于延迟扩展的内容。  
+
+# Command Line Arguments to Your Script
+---
+你可以使用特殊的语法读取传递给脚本的命令行参数。 语法是一个单一的`%`字符，后面是从0到9的参数的序号位置。零序参数是批处理文件本身的名称。 所以我们脚本`HelloWorld.cmd`中的变量`%0`将是“HelloWorld.cmd”。  
+
+命令行的第一个非空参数就是 `%1`, 第二个就是`%2` ……， 第九个就是`%9`。
+
+>**Note:** DOS确实支持9个以上的命令行参数，然而，你不能直接读取第9个之后参数。这是因为特殊变量语法不能识别`%10`或更高。 实际上`%10`，它只识别到`%1`, `0` 作为一个字符被拼接到后边。
+
+通过一个例子来测试下，写几个脚本命名为 `arguments.cmd`， 内容如下
+```bash
+echo %1
+echo %10
+``` 
+![不能识别%10](http://upload-images.jianshu.io/upload_images/1335634-5245aabd35a0967d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+*不能识别%10*  
+{:.image-caption}   
+
+从运行结果来看，`%10`实际上是： 第一个参数 ＋ `0` 。  
+
+使用`SHIFT`命令从参数列表中弹出第一个参数，这使得所有的参数都向左移动，这样第十个参数就可以通过`%9`来获取了。在循环的部分，将会详细讲解这部分内容。 
+
+# Tricks with Command Line Arguments
+---
+
+命令行参数还支持一些非常有用的可选语法，针对文件路径参数，可以解析作为命令行参数的文件的路径、时间戳或大小。这个超级有用的特性文档有点难找 :pouting_cat:，运行 `for /?`，在页面的最末尾。
+
++ `%~I`从第`I`个命令行参数中删除引号，在处理文件路径参数时非常有用。之前讲过，带空格的路径需要用引号括起来，但是多次括起来就会导致错误。这里的`I`可以事`0~9`的整数。
+
++ `%~fI` 展开完整路径 
+例如 `args.cmd`：
+```bash
+echo %~f1
+```  
+调用
+```bash
+args.cmd .\adoble
+``` 
+输出：`C:\Users\Edward\Desktop\Adobe`  
+
++ `%~fsI` 与上边的类似，`s` 选项会生成一个 DOS 8.3[^8-3filename]的短路径，例如：`C:\Program Files`缩写为 `C:\PROGRA~1`。在使用一些不处理空格的第三脚本，这个技巧很实用啊。 :wink:  
+
++ `%~dpI` 第`I`个文件路径参数的完整父级路径。几乎在每个批处理脚本中，我都用这个技巧来确定脚本的位置。 `SET parent=%~dp0`通过这个用法，可以输出脚本的所在路径。
+
++ `%~nxI` 第`I`个文件路径参数的文件名（包括扩展名）。类似`%0`， 我也经常使用这个技巧来确定运行时脚本的名字。如果需要输出消息给用户，我喜欢在消息前面加上脚本的名字，像这样`ECHO %~n0: 输出的消息`，而不是直接输出`ECHO 输出的消息`。这样做的好处是，用户知道这个消息是从哪个脚本中输出的。如果你花了几个小时的时间为了确定错误消息是从哪个脚本输出的，是不是很崩溃？:laughing:
+
+
+# Some Final Polish
+---
+我总是将这些命令包含在批处理脚本的顶部：
+```bash
+SETLOCAL ENABLEEXTENSIONS
+SET me=%~n0
+SET parent=%~dp0
+``` 
+`SETLOCAL`命令能保证脚本在退出之后不覆写任何现有的变量。`ENABLEEXTENSIONS`[^enableextensions]，是`SETLOCAL`的一个参数，这是一个非常有用的特性，称之为`启动或停用命令处理器扩展名`。别问为什么真的很有用 :joy:  
+`me`变量存储了脚本的名称（不包含扩展名）。这样就能很方便的给输出的消息加上前缀`ECHO %me%: 输出的消息`。  
+`parent`存储了脚本的所在目录，这样可以很容易的给同一目录下的其他文件拼接出完整的路径。
+
+# 参考资料
+---
+
+[^8-3filename]: [8.3 filename](https://en.wikipedia.org/wiki/8.3_filename)  
+[^enableextensions]: [Determines whether the extensions to the command processor (Cmd.exe)](https://technet.microsoft.com/en-us/library/cc959665.aspx)
