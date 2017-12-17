@@ -12,7 +12,7 @@ author: ettingshausen
 + [Overview]({% post_url 2017-12-09-guide-to-windows-batch-scripting %})
 + [Part 1 – 开始]({% post_url 2017-12-10-windows-batch-getting-started %})
 + Part 2 – 变量
-+ Part 3 – Return Codes
++ [Part 3 – 返回值]({% post_url 2017-12-17-windows-batch-return-codes %})
 + Part 4 – stdin, stdout, stderr
 + Part 5 – If/Then Conditionals
 + Part 6 – Loops
