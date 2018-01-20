@@ -15,7 +15,7 @@ author: ettingshausen
 + [Part 3 – 返回值]({ %post_url 2017-12-17-windows-batch-return-codes %})
 + [Part 4 – 标准输入输出]({% post_url 2017-12-19-windows-batch-stdin-stdout-stderr %})
 + [Part 5 – If 语句]({% post_url 2017-12-20-windows-batch-if-then-conditionals %})
-+ Part 6 – Loops
++ [Part 6 – 循环语句]({% post_url 2018-01-21-windows-batch-loops %})
 + Part 7 – Functions
 + Part 8 – Parsing Input
 + Part 9 – Logging
