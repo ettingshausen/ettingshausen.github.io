@@ -17,7 +17,7 @@ author: ettingshausen
 + Part 5 – If 语句
 + [Part 6 – 循环语句]({% post_url 2018-01-21-windows-batch-loops %})
 + [Part 7 – 函数]({% post_url 2018-01-22-windows-batch-functions %})
-+ Part 8 – Parsing Input
++ [Part 8 – 解析输入]({% post_url 2018-01-23-windows-batch-parsing-input %})
 + Part 9 – Logging
 + Part 10 – Advanced Tricks
 

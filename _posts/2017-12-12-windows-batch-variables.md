@@ -17,7 +17,7 @@ author: ettingshausen
 + [Part 5 – If 语句]({% post_url 2017-12-20-windows-batch-if-then-conditionals %})
 + [Part 6 – 循环语句]({% post_url 2018-01-21-windows-batch-loops %})
 + [Part 7 – 函数]({% post_url 2018-01-22-windows-batch-functions %})
-+ Part 8 – Parsing Input
++ [Part 8 – 解析输入]({% post_url 2018-01-23-windows-batch-parsing-input %})
 + Part 9 – Logging
 + Part 10 – Advanced Tricks      
 
@@ -132,7 +132,7 @@ echo %10
 
 命令行参数还支持一些非常有用的可选语法，针对文件路径参数，可以解析作为命令行参数的文件的路径、时间戳或大小。这个超级有用的特性文档有点难找 :pouting_cat:，运行 `for /?`，在页面的最末尾。
 
-+ `%~I`从第`I`个命令行参数中删除引号，在处理文件路径参数时非常有用。之前讲过，带空格的路径需要用引号括起来，但是多次括起来就会导致错误。这里的`I`可以事`0~9`的整数。
++ `%~I`从第`I`个命令行参数中删除引号，在处理文件路径参数时非常有用。之前讲过，带空格的路径需要用引号括起来，但是多次括起来就会导致错误。这里的`I`可以是`0~9`的整数。
 
 + `%~fI` 展开完整路径 
 例如 `args.cmd`：
