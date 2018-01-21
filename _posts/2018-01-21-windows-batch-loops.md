@@ -18,7 +18,7 @@ author: ettingshausen
 + Part 6 – 循环语句
 + [Part 7 – 函数]({% post_url 2018-01-22-windows-batch-functions %})
 + [Part 8 – 解析输入]({% post_url 2018-01-23-windows-batch-parsing-input %})
-+ Part 9 – Logging
++ [Part 9 – 日志]({% post_url 2018-01-25-windows-batch-logging %})
 + Part 10 – Advanced Tricks
 
 在集合中遍历条目是脚本的常见任务。它可以遍历目录中的文件，或者一次读取一行文本。

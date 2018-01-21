@@ -36,7 +36,7 @@ Windows 10 替换了默认的 `cmd` 为 `Powershell` ，显然 `Powershell` 更�
 + [Part 6 – 循环语句]({% post_url 2018-01-21-windows-batch-loops %})
 + [Part 7 – 函数]({% post_url 2018-01-22-windows-batch-functions %})
 + [Part 8 – 解析输入]({% post_url 2018-01-23-windows-batch-parsing-input %})
-+ Part 9 – Logging
++ [Part 9 – 日志]({% post_url 2018-01-25-windows-batch-logging %})
 + Part 10 – Advanced Tricks  
 
 :wink:

@@ -18,7 +18,7 @@ author: ettingshausen
 + [Part 6 – 循环语句]({% post_url 2018-01-21-windows-batch-loops %})
 + Part 7 – 函数
 + [Part 8 – 解析输入]({% post_url 2018-01-23-windows-batch-parsing-input %})
-+ Part 9 – Logging
++ [Part 9 – 日志]({% post_url 2018-01-25-windows-batch-logging %})
 + Part 10 – Advanced Tricks
 
 函数实际上是在任何过程编码语言中重用代码的方法。然而DOS缺乏真正的功能关键字，但是你可以提供过`CALL` 关键字来实现。
