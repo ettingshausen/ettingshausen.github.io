@@ -41,3 +41,8 @@ Windows 10 替换了默认的 `cmd` 为 `Powershell` ，显然 `Powershell` 更�
 
 :wink:
 未完待续! 
+
+# 扩展阅读
+----
+1. [Windows命令行和批处理技巧](http://netwjx.github.io/blog/2012/07/29/windows-shell-and-bat-skills/)
+1. [Windows 命令行基础](https://blog.henix.info/blog/windows-cmdbasic/)
