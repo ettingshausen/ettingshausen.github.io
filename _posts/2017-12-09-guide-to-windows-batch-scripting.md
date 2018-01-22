@@ -40,7 +40,6 @@ Windows 10 替换了默认的 `cmd` 为 `Powershell` ，显然 `Powershell` 更�
 + [Part 10 – 高级技巧]({% post_url 2018-01-26-windows-batch-advanced-tricks %})
 
 :wink:
-未完待续! 
 
 # 扩展阅读
 ----
