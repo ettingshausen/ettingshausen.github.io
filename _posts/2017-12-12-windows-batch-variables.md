@@ -19,7 +19,7 @@ author: ettingshausen
 + [Part 7 – 函数]({% post_url 2018-01-22-windows-batch-functions %})
 + [Part 8 – 解析输入]({% post_url 2018-01-23-windows-batch-parsing-input %})
 + [Part 9 – 日志]({% post_url 2018-01-25-windows-batch-logging %})
-+ Part 10 – Advanced Tricks      
++ [Part 10 – 高级技巧]({% post_url 2018-01-26-windows-batch-advanced-tricks %})  
 
 今天我们将介绍变量，这些变量在复杂点的批处理程序中都是必需的。变量的语法可能有点奇怪。:smile_cat:
 # Variable Declaration

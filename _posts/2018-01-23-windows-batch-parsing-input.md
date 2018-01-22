@@ -19,7 +19,7 @@ author: ettingshausen
 + [Part 7 – 函数]({% post_url 2018-01-22-windows-batch-functions %})
 + Part 8 – 解析输入
 + [Part 9 – 日志]({% post_url 2018-01-25-windows-batch-logging %})
-+ Part 10 – Advanced Tricks
++ [Part 10 – 高级技巧]({% post_url 2018-01-26-windows-batch-advanced-tricks %})
 
 健壮的输入解析，是一个好的脚本和普通脚本的区分标准。本文将介绍一些相关技巧。
 

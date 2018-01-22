@@ -19,7 +19,7 @@ author: ettingshausen
 + [Part 7 – 函数]({% post_url 2018-01-22-windows-batch-functions %})
 + [Part 8 – 解析输入]({% post_url 2018-01-23-windows-batch-parsing-input %})
 + [Part 9 – 日志]({% post_url 2018-01-25-windows-batch-logging %})
-+ Part 10 – Advanced Tricks    
++ [Part 10 – 高级技巧]({% post_url 2018-01-26-windows-batch-advanced-tricks %})
 
 与Unix/Linux 一样，DOS使用三个通用的“文件流”来进行输入，输出文本信息或者错误信息。程序或者脚本使用标准输入文件（stdin）读取内容，标准输出（stdout）输出文件或者打印文本到屏幕上，标准错误（stderr）输出错误信息到屏幕上。
 
