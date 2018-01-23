@@ -25,14 +25,11 @@ instagram_username:  ettingshausen
 google_analytics: UA-102246716-1
 
 # Build settings
-# markdown: kramdown
-# kramdown:
-#   input: GFM
-#   hard_wrap: false
-# highlighter: rouge
-markdown: redcarpet
-redcarpet:
-    extensions: ["tables"]
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
 theme: minima
 plugins:
   - jekyll-feed
