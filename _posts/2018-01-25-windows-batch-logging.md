@@ -59,6 +59,9 @@ REM create a log file named [script].YYYYMMDDHHMMSS.txt
 SET log=%TEMP%\%me%.%DATE:~10,4%_%DATE:~4,2%_%DATE:~7,2%%TIME:~0,2%_%TIME:~3,2%_%TIME:~6,2%.txt
 ```
 
+>**Note**:
+`%DATE:~10,4%` 表示从`%DATE%`变量中，从第10个位置开始截取4位。 例如 `ECHO %DATE:~0,4%` 输出当前年份。
+
 在消息的内容前加上一个前缀，例如`script: some message`。这个技巧可以在出错的情况下，快速发现是在哪个地方输出的异常消息。
 
 # 显示启动参数
