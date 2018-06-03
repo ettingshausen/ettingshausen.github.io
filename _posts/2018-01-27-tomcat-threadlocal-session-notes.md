@@ -78,7 +78,7 @@ public class SessionInterceptor implements HandlerInterceptor {
 # 总结
 -----
 
-要解决这个问题首先得理解要解决这个问题首先得理解，关于ThreadLocal可以单独写一篇文章来讲，关于ThreadLocal可以单独写一篇文章来讲，[深入理解ThreadLocal](http://vence.github.io/2016/05/28/threadlocal-info/) 这篇文章结合源码，分析的挺详细。
+要解决这个问题首先得理解 `ThreadLocal`，关于ThreadLocal可以单独写一篇文章来讲，关于ThreadLocal可以单独写一篇文章来讲，[深入理解ThreadLocal](http://vence.github.io/2016/05/28/threadlocal-info/) 这篇文章结合源码，分析的挺详细。
 
 这个问题牵扯出来的问题挺多，比如线程池，ThreadLocal是否会导致内存泄漏等等。
 参考[深入理解ThreadLocal](http://vence.github.io/2016/05/28/threadlocal-info/)一文，ThreadLocal使用建议如下：
