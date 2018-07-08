@@ -1,14 +1,16 @@
 ---
 layout: cayman
-title:  "读《逆流而上——阿里巴巴技术成长之路》有感"
+title:  "读《逆流而上》有感"
 date:   2018-07-09 01:40:57 +0800
 categories: Books
 published: true
 author: ettingshausen
 --- 
-今天一口气读完了《逆流而上》，颇有收获，也为之震撼。全书只有五个章节，200多页。
-![](https://img1.doubanio.com/view/subject/l/public/s29615837.jpg)
+今天一口气读完了《逆流而上——阿里巴巴技术成长之路》，颇有收获，也为之震撼。全书只有五个章节，200多页。  
 
+![](https://wx3.sinaimg.cn/large/685ea4faly1ft34z4ki60j20gf0lgt9y.jpg)
+*逆流而上——阿里巴巴技术成长之路*  
+{:.image-caption}   
 > 1. 基础架构高可用
 1. 中间件使用常见隐患与预防
 1. 数据库常见问题
@@ -32,7 +34,7 @@ author: ettingshausen
 ---
 分布式系统是云计算的核心，优势很多。但是也得面对许多挑战，比如，高度依赖通信，集群应用管理，分布式事务控制等。这些问题一般的公司，基本上没有能力应对。2007到2008两年，淘宝架构完成了从集中式到分布式的演进。从第二章开始，陆续介绍了阿里的分布式缓存集群， [`VipServer`](https://blog.csdn.net/heyc861221/article/details/80126013), 阿里云飞天系统等。有意思的是，飞天系统里面模块都是用中国古代神话中神命名的，比如，盘古、女娲…
 
-![](http://wx4.sinaimg.cn/large/685ea4faly1ft322zxzraj20hf0d075n.jpg)  
+![](https://wx4.sinaimg.cn/large/685ea4faly1ft322zxzraj20hf0d075n.jpg)  
 *[阿里云飞天系统的技术架构](https://www.cnblogs.com/snailrun/p/4986736.html)*  
 {:.image-caption}   
 我平常主要的开发面向业务，所以在这个章节更想看到关于阿里开源的[`Dubbo`](https://github.com/apache/incubator-dubbo) 的相关介绍，然而并没有:flushed:。  
