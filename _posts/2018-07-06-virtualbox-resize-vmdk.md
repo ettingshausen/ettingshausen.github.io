@@ -10,7 +10,14 @@ author: ettingshausen
 Windows 10 有些吃硬盘，VirtualBox 创建的虚拟机给了50G的空间，没几天就快满了。  
 `VBoxManage` 提供了 `modifymedium` 方法可以调整虚拟硬盘的大小，但是支持 `VDI` 和 `VHD` 两种格式。VBoxManage 默认创建的 `VMDK`，只能通过转换，然后才能调整。方法如下：
 
-{% gist 551e82913ba48c0b1b93805f742ef524 %} 
+```shell
+# Clone the .vmdk image to a .vdi.
+vboxmanage clonehd "virtualdisk.vmdk" "new-virtualdisk.vdi" --format vdi
+# Resize the new .vdi image (30720 == 30 GB).
+vboxmanage modifyhd "new-virtualdisk.vdi" --resize 30720
+# Optional; switch back to a .vmdk.
+VBoxManage clonehd "cloned.vdi" "resized.vmdk" --format vmdk
+```
 
 >**注意：** 执行命令前需要先将虚拟机关机。  
 
