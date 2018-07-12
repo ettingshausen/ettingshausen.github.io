@@ -1,6 +1,6 @@
 ---
 layout: cayman
-title:  "读《逆流而上》有感"
+title:  "《逆流而上》"
 date:   2018-07-09 01:40:57 +0800
 categories: Books
 published: true
