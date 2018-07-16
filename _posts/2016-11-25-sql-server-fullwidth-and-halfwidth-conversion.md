@@ -2,7 +2,7 @@
 layout: post
 title:  "SQL Server 全角半角转换"
 date:   2016-11-25 16:05:06 +0800
-categories: SQL Serve
+categories: SQL Server
 ---
 
 ### 哪些字符是有全角和半角之分的？
