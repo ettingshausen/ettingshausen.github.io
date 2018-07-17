@@ -6,6 +6,9 @@ categories: SSL
 published: true
 author: ettingshausen
 --- 
+![](https://wx1.sinaimg.cn/large/685ea4faly1ftdhi7juslj20i209974s.jpg)  
+*Let's Encrypt*  
+{:.image-caption}  
 
 [Let's Encrypt](https://letsencrypt.org/) 证书免费，并且得到众多公司和组织的支持。比如，Chrome、Mozilla、Cisco等。证书只有90天的有效期，但是可以通过脚本（[certbot](https://github.com/certbot/certbot)）可以自动续期，可以说是完美了。网上有许多详细的教程可以参考，比如[免费 Https 证书（Let's Encrypt）申请与配置](https://keelii.github.io/2016/06/12/free-https-cert-lets-encrypt-apply-install/)。  
 
