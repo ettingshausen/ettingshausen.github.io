@@ -24,7 +24,7 @@ cd certbot
 #### 2. 添加A记录  
 ---
 
-平成使用DNSPod，但是在申请证书的时候发现，响应比较慢。建议使用[cloudflare](https://www.cloudflare.com/)。 首先添加需要申请域名的A记录，指向执行certbot脚本的服务器。
+平常使用DNSPod，但是在申请证书的时候发现，响应比较慢。建议使用[cloudflare](https://www.cloudflare.com/)。 首先添加需要申请域名的A记录，指向执行certbot脚本的服务器。
 
 ![](https://wx2.sinaimg.cn/large/685ea4faly1ftdgx1l8foj20qo0a4aat.jpg)  
 #### 3. 执行脚本
@@ -67,7 +67,7 @@ Press Enter to Continue
 #### 4. 添加TXT记录   
 ---
 
-按照上边的提示添加一个name为`_acme-challenge.hxxx.xxx.tk`， 值为 `a16ragY...............OcYdcJyudR0`的TXT解析记录（参考上图），保存之后稍等一会儿再按回车，DNS解析需要点时间，大概需要一分钟就能生效。回车之后，稍等片刻，如果申请成功会看到以下信息。
+按照上边的提示添加一个name为`_acme-challenge.hxxx.xxx.tk`， value为 `a16ragY...............OcYdcJyudR0`的TXT解析记录（参考上图），保存之后稍等一会儿再按回车，DNS解析需要点时间，大概需要一分钟就能生效。回车之后，稍等片刻，如果申请成功会看到以下信息。
 
 ```
 Waiting for verification...
