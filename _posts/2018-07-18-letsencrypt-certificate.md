@@ -24,7 +24,7 @@ cd certbot
 #### 2. 添加A记录  
 ---
 
-平成使用DNSPod，但是在申请证书的时候发现，相应比较慢。建议使用[cloudflare](https://www.cloudflare.com/)。 首先添加需要申请域名的A记录，指向执行certbot脚本的服务器。
+平成使用DNSPod，但是在申请证书的时候发现，响应比较慢。建议使用[cloudflare](https://www.cloudflare.com/)。 首先添加需要申请域名的A记录，指向执行certbot脚本的服务器。
 
 ![](https://wx2.sinaimg.cn/large/685ea4faly1ftdgx1l8foj20qo0a4aat.jpg)  
 #### 3. 执行脚本
