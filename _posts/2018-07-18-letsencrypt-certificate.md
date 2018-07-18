@@ -10,9 +10,9 @@ author: ettingshausen
 *Let's Encrypt*  
 {:.image-caption}  
 
-[Let's Encrypt](https://letsencrypt.org/) 证书免费，并且得到众多公司和组织的支持。比如，Chrome、Mozilla、Cisco等。证书只有90天的有效期，但是可以通过脚本（[certbot](https://github.com/certbot/certbot)）可以自动续期，可以说是完美了。网上有许多详细的教程可以参考，比如[免费 Https 证书（Let's Encrypt）申请与配置](https://keelii.github.io/2016/06/12/free-https-cert-lets-encrypt-apply-install/)。  
+[Let's Encrypt](https://letsencrypt.org/) 证书免费，并且得到众多公司和组织的支持。比如，Chrome、Mozilla、Cisco等。虽然证书只有90天的有效期，但是可以通过脚本（[certbot](https://github.com/certbot/certbot)）可以自动续期，可以说是完美了。网上有许多详细的教程可以参考，比如[免费 Https 证书（Let's Encrypt）申请与配置](https://keelii.github.io/2016/06/12/free-https-cert-lets-encrypt-apply-install/)。  
 
-然而，要是没有备案的话，运营商会屏蔽掉 `80`、`443`两个端口，大部分的教程失效。经过数个小时的摸索，查看 `certbot` 的文档，惊喜的发现还支持一个 `DNS plugins`，通过校验域名的TXT记录获取证书。下面就把整个过程作已记录。
+然而，要是没有备案的话，运营商会屏蔽掉 `80`、`443`两个端口，大部分教程中的方法都会失效。经过数个小时的摸索，惊喜的发现 certbot 还支持一个 `DNS plugins`，通过校验域名的TXT记录获取证书。下面就把整个过程作以记录。
 
 #### 1. 下载 certbot
 ---
