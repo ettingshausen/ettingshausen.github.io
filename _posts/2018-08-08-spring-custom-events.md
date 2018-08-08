@@ -126,6 +126,8 @@ public class DischargeEventNotifyListener implements ApplicationListener<Dischar
 
 从代码管理上来看，事件的发布者和监听者并无直接联系，两部分的代码没有耦合，无需关注对方的逻辑，符合单一原则 (SRP：Single responsibility principle)。  通过注解灵活的控制监听器是否需要同步执行，减少自定义线程的代码量。
 
+对于测试来讲，多个监听者与发布者之间并无直接关联，新增的监听方法，并不需要改动原有代码，所以只需要对新增加的代码进行测试即可。
+
 # 参考资料
 --- 
 1. [Spring Events](https://www.baeldung.com/spring-events)
