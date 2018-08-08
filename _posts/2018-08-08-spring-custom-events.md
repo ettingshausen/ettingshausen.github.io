@@ -43,7 +43,7 @@ public class CareApplication {
     <property name='taskExecutor' ref='asyncExecutor' />
 </bean>
 ```
-监听方法上添加 `@EventListener` 注解：
+监听方法上添加 `@Async` 注解：
 ```java
 @Component
 public class EventListener {
