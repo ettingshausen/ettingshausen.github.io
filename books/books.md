@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 读过的书
+title: 书单
 permalink: /books/
 author: ettingshausen
 date:   2018-07-09 00:54:32 +0800
@@ -15,7 +15,7 @@ date:   2018-07-09 00:54:32 +0800
 + 《数学之美》
 + [《浪潮之巅》]({% post_url 2017-12-03-it-laws %})
 + 《疯狂Java程序员基本修养》
-+ 《码出高效——阿里巴巴Java开发手册 1.4.0》
++ [《码出高效——阿里巴巴Java开发手册 1.4.0》](https://github.com/alibaba/p3c)
 
 # 2017
 ---
