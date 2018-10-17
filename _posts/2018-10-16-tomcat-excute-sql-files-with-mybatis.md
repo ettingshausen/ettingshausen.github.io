@@ -54,4 +54,4 @@ public class ContextInitializeListener implements ServletContextListener {
 # 注意事项
 ----
 
-`ScriptRunner` 默认的分隔符 `DEFAULT_DELIMITER` 是 `;` 
+`ScriptRunner` 默认的分隔符 `DEFAULT_DELIMITER` 是 `;` 如果数据库是SQL Server需要更换成 `GO`。
