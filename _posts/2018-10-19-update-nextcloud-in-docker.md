@@ -1,13 +1,17 @@
 ---
 layout: cayman
-title:  "NextCloud在Docker中的升级方法"
+title:  "Nextcloud在Docker中的升级方法"
 date:   2018-10-19 02:46 +0800
 categories: docker nextcloud
 published: true
 author: ettingshausen
 ---   
 
-`NextCloud` 是一款优秀的开源网盘，它的前身是 `OwnCloud`。最近 `NextCloud` 更新挺频繁。由于服务运行在`docker` 中，貌似不能通过升级管理器自动升级。 实际上可以通过 `docker` 的特性完成升级。
+![](https://wx1.sinaimg.cn/large/685ea4faly1fwdi5dhx9zj20qg0igk0b.jpg)
+*Nextcloud*  
+{:.image-caption}   
+
+`Nextcloud` 是一款优秀的开源网盘，它的前身是 `OwnCloud`。最近 `Nextcloud` 更新挺频繁。由于服务运行在`docker` 中，貌似不能通过升级管理器自动升级。 实际上可以通过 `docker` 的特性完成升级。
 
 #### 1. 更新镜像
 ---
