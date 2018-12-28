@@ -1,6 +1,6 @@
 ---
 layout: cayman
-title:  "在Docker中通过DNS解析申请Let's Encrypt证书"
+title:  "在Docker中通过DNS解析申请SSL证书"
 date:   2018-12-18 14:22 +0800
 categories: SSL
 published: true
@@ -49,7 +49,7 @@ docker run -it --rm --name certbot `
             -d '*.XXX.tk'
 ```  
 
-Linux用户可以把行末尾的 `` ` `` 替换未 `\`
+以上是PowerShell的命令，Linux用户可以把行末尾的 `` ` `` 替换未 `\`
 
 ```bash
 PS C:\Users\Edward> docker run -it --rm --name certbot `
