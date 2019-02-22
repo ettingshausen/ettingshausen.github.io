@@ -33,7 +33,7 @@ docker run -d --name tmpcloud -p 3000:80 --volumes-from 7f551f623f2a nextcloud
 ---
 ```sh
 docker rm 7f551f623f2a
-docker run -d --name nextcloud -p 4009:80 --volumes-from tmpcloud nextcloud
+docker run -d --name nextcloud --restart=always -p 4009:80 --volumes-from tmpcloud nextcloud
 ```
 
 #### 4. 删除掉旧的镜像与临时容器
