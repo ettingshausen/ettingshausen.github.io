@@ -27,7 +27,19 @@ author: ettingshausen
 >双击将这两个选项值都修改为 `1` 默认值是 `0`     
 >3. 与步骤2类似修改 `HKEY_LOCAL_MACHINE\SOFTWARE\Alps\Apoint\Gesture`  
 >4. 重启电脑
+  
+或者将以下文本复制到记事本中另存为 `Gesture.reg`， 双击运行即可。
+```
+Windows Registry Editor Version 5.00
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Alps\Apoint\Gesture]
+"2TapSupport"=dword:00000001
+"2TapShow"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Alps\Apoint\Gesture]
+"2TapSupport"=dword:00000001
+"2TapShow"=dword:00000001
+```  
 
 # 参考资料
 --- 
