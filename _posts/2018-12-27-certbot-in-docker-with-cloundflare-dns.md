@@ -22,7 +22,7 @@ docker pull certbot/dns-cloudflare
 #### 2. 获取 Global API Key 生成 cloudflare.ini  
 ---
 登录 [cloudflare](https://www.cloudflare.com/) 在[个人信息](https://www.cloudflare.com/a/account/my-account)的底部找到 Global API Key。
-![](https://wx1.sinaimg.cn/large/685ea4faly1fyllvkynl0j20t50840su.jpg)  
+![](https://user-images.githubusercontent.com/9806325/63151202-89dbd600-c03b-11e9-9f5e-d04c60f58d2a.jpg)  
 
 创建 `cloudflare.ini` 文件， `dns_cloudflare_api_key`为 Global API Key，`dns_cloudflare_email` 为账号的申请邮箱。
 ```
