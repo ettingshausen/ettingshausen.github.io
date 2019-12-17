@@ -60,7 +60,7 @@ mkisofs -udf -no-emul-boot -relaxed-filenames -joliet-long -hide boot.bin -b boo
 
 # 参考资料
 ---   
-[^rufs]:[Rufus](https://rufus.ie/)
-![Modify a bootable .iso image (macOS)](https://epir.at/2013/03/10/modify-a-bootable-.iso-image-macos/)  
-![How to update Lenovo BIOS from Linux without using Windows](https://www.cyberciti.biz/faq/update-lenovo-bios-from-linux-usb-stick-pen/)  
-![BIOS Update (Utility & Bootable CD) for ThinkPad E450, E450c, E550, E550c](https://support.lenovo.com/us/en/downloads/ds101972)
+[^rufs]:[Rufus](https://rufus.ie/)  
+[Modify a bootable .iso image (macOS)](https://epir.at/2013/03/10/modify-a-bootable-.iso-image-macos/)  
+[How to update Lenovo BIOS from Linux without using Windows](https://www.cyberciti.biz/faq/update-lenovo-bios-from-linux-usb-stick-pen/)  
+[BIOS Update (Utility & Bootable CD) for ThinkPad E450, E450c, E550, E550c](https://support.lenovo.com/us/en/downloads/ds101972)
