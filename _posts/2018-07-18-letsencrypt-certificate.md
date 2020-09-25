@@ -6,7 +6,7 @@ categories: SSL
 published: true
 author: ettingshausen
 --- 
-![](https://wx1.sinaimg.cn/large/685ea4faly1ftdhi7juslj20i209974s.jpg)  
+![685ea4faly1ftdhi7juslj20i209974s](https://user-images.githubusercontent.com/9806325/94255576-09381a80-ff5b-11ea-905a-4d8e295ac968.jpg)
 *Let's Encrypt*  
 {:.image-caption}  
 
@@ -26,7 +26,7 @@ cd certbot
 
 平常使用DNSPod，但是在申请证书的时候发现，响应比较慢。建议使用[cloudflare](https://www.cloudflare.com/)。 首先添加需要申请域名的A记录，指向执行certbot脚本的服务器。
 
-![](https://wx2.sinaimg.cn/large/685ea4faly1ftdgx1l8foj20qo0a4aat.jpg)  
+![685ea4faly1ftdgx1l8foj20qo0a4aat](https://user-images.githubusercontent.com/9806325/94255287-94fd7700-ff5a-11ea-9397-324bf309f56a.jpg)
 #### 3. 执行脚本
 ---  
 
