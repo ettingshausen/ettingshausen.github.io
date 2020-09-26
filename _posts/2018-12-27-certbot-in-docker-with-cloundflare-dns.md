@@ -8,7 +8,10 @@ author: ettingshausen
 --- 
 ![](https://wx1.sinaimg.cn/large/685ea4faly1ftdhi7juslj20i209974s.jpg)  
 *Let's Encrypt*  
-{:.image-caption}  
+{:.image-caption}    
+
+> Note cloudflare 关闭了免费账号的相关API，免费版用户无法通过此方法获取证书。  
+> certbot issue:[7970](https://github.com/certbot/certbot/issues/7970)
 
 之前写了[通过DNS解析申请Let's Encrypt证书]({% post_url 2018-07-18-letsencrypt-certificate %})，现在看来方案有些落后了。[certbot](https://github.com/certbot/certbot) 已经有了[cloudflare](https://www.cloudflare.com/) DNS插件，并且提供了 Docker 镜像，获取证书更加容易了。终于可以通过 DNS 解析自动获取证书啦。  
 
